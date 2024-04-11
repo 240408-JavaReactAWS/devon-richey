@@ -36,7 +36,7 @@ public class Movie {
     }
 
     // Getters and Setters
-    
+
     public int getId() {
         return id;
     }
