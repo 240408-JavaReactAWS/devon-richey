@@ -9,7 +9,7 @@ public class Movie {
     // Data Fields
 
     @Id
-    @Column (name = "userId")
+    @Column (name = "movieId")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
