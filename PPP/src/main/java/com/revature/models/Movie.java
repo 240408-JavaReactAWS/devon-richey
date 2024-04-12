@@ -21,6 +21,8 @@ public class Movie {
 
 
     // Constructors
+    public Movie() {}
+
 
     public Movie(String title, String genre, int releaseYear) {
         this.title = title;

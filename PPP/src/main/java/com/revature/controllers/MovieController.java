@@ -24,8 +24,6 @@ public class MovieController {
         this.ms = ms;
     }
 
-    // TODO: Mappings
-
     // Create New Movie
     @PostMapping
     public Movie createMovieHandler(@RequestBody Movie movie) {
