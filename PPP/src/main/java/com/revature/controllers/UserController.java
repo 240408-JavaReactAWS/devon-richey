@@ -45,6 +45,17 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
     }
 
+    @PostMapping("{userId}/movies/{movieId}/watched")
+    public ResponseEntity<User> addWatchedMovie(@PathVariable Integer userId, @PathVariable Integer movieId) {
+        User user = us.addWatchedMovie(userId, movieId);
+        if (user != null) {
+            return ResponseEntity.ok(user);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+
     @GetMapping("/moviesWatched")
     public ResponseEntity<List<Movie>> getMoviesWatched(@RequestParam String username, @RequestParam String password) {
         User user = us.login(username, password);
