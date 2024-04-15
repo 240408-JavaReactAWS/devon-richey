@@ -17,20 +17,20 @@ public class Movie {
 
     private String genre;
 
-    private int releaseYear;
+    private String releaseYear;
 
 
     // Constructors
     public Movie() {}
 
 
-    public Movie(String title, String genre, int releaseYear) {
+    public Movie(String title, String genre, String releaseYear) {
         this.title = title;
         this.genre = genre;
         this.releaseYear = releaseYear;
     }
 
-    public Movie(int id, String title, String genre, int releaseYear) {
+    public Movie(int id, String title, String genre, String releaseYear) {
         this.id = id;
         this.title = title;
         this.genre = genre;
@@ -63,11 +63,11 @@ public class Movie {
         this.genre = genre;
     }
 
-    public int getReleaseYear() {
+    public String getReleaseYear() {
         return releaseYear;
     }
 
-    public void setReleaseYear(int releaseYear) {
+    public void setReleaseYear(String releaseYear) {
         this.releaseYear = releaseYear;
     }
 }
